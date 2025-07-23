@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Conda / pip
+env/
+.venv/
+*.env
+*.conda
+*.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Shell history / secrets
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+*.old
+*.secret
+credentials.json
+
+# VSCode/IDE
+.vscode/
+.idea/
+
+# Output files
+*.out
+*.o
+*.a
+*.so
+
+# ROCm logs / debug
+rocm-smi.log
+hs_err_pid*.log
+
