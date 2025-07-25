@@ -14,7 +14,7 @@ fi
 read -p "是否安装常用软件包？[Y/n]: " install_choice
 install_choice=${install_choice:-Y}
 if [[ "$install_choice" =~ ^[Yy]$ ]]; then
-    SOFTWARE_LIST="psmisc nc net-tools rsync vim lrzsz ntp libzstd1 openssl tree iotop git curl wget htop unzip zip tar build-essential lspci"
+    SOFTWARE_LIST="psmisc nc net-tools rsync vim lrzsz ntp libzstd1 openssl tree iotop git curl wget htop unzip zip tar build-essential pciutils"
     for pkg in $SOFTWARE_LIST; do
         if apt-cache show "$pkg" > /dev/null 2>&1; then
             echo "安装 $pkg ..."
